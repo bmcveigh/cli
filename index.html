@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLI</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<style>
+		input[type="text"] {
+		  background: transparent;
+		  border: 0;
+		  color: #fff;
+		  font-family: "Courier";
+		  padding: 5px;
+		}
+
+		.cli {
+		  width: 600px;
+		  height: 300px;
+		  overflow-y: auto;
+		}
+
+		.cli.cli-default {
+		  background: #000;
+		  border-radius: 4px;
+		  color: #fff;
+		  font-family: "Courier";
+		  padding: 20px;
+		}
+	</style>
+
+	<div class="cli cli-default">
+	  <div class="cli-log">
+	    <div>Available commands: "clear", "ls"</div>
+	  </div>
+	  $
+	  <input class="cli-prompt" type="text" />
+	</div>
+
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
